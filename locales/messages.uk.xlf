@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="introductionHeader" datatype="html">
+        <source>Welcome to i18n!</source>
+        <target>Ласкаво просимо до i18n!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header for the i18n app</note>
+        <note priority="1" from="meaning">User welcome</note>
+      </trans-unit>
+      <trans-unit id="logoAlternativeText" datatype="html">
+        <source>Nx - Smart, Extensible Build Framework</source>
+        <target>Nx - розумний, розширюваний каркас збірки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="522eda60ff08ea634ef2e8f2c0a36bb06dcd8af9" datatype="html">
+        <source>Text without an element</source>
+        <target>Текст без елемента</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="builtInPipesSectionTitle" datatype="html">
+        <source>Built-in pipes</source>
+        <target>Вбудовані пайпи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dateLabel" datatype="html">
+        <source>Date</source>
+        <target>Дата</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Date label</note>
+      </trans-unit>
+      <trans-unit id="timeLabel" datatype="html">
+        <source>Time</source>
+        <target>Час</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Time label</note>
+      </trans-unit>
+      <trans-unit id="currencyLabel" datatype="html">
+        <source>Currency</source>
+        <target>Валюта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Currency label</note>
+      </trans-unit>
+      <trans-unit id="feedbackFormTitle" datatype="html">
+        <source>Feedback form</source>
+        <target>Форма зворотного зв'язку</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="submitButton" datatype="html">
+        <source>Submit</source>
+        <target>Відправити</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactUsFormTitle" datatype="html">
+        <source>Contact us form</source>
+        <target>Форма зв'язку з нами</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="greetingMessage" datatype="html">
+        <source>Glad to see you again, <x id="PH" equiv-text="firstName"/> <x id="PH_1" equiv-text="lastName"/></source>
+        <target>Раді вас знову бачити, <x id="PH_1" equiv-text="lastName"/> <x id="PH" equiv-text="firstName"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n/src/app/app.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
