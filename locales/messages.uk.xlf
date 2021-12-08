@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="introductionHeader" datatype="html">
-        <source>Welcome to i18n!</source>
-        <target>Ласкаво просимо до i18n!</target>
+        <source>Welcome to i18n-app!</source>
+        <target>Ласкаво просимо до i18n-app!</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">An introduction header for the i18n app</note>
@@ -16,7 +16,7 @@
         <source>Nx - Smart, Extensible Build Framework</source>
         <target>Nx - розумний, розширюваний каркас збірки</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
@@ -24,7 +24,7 @@
         <source>Text without an element</source>
         <target>Текст без елемента</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
@@ -32,7 +32,7 @@
         <source>Built-in pipes</source>
         <target>Вбудовані пайпи</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
@@ -40,7 +40,7 @@
         <source>Date</source>
         <target>Дата</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Date label</note>
@@ -49,7 +49,7 @@
         <source>Time</source>
         <target>Час</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">Time label</note>
@@ -58,7 +58,7 @@
         <source>Currency</source>
         <target>Валюта</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="description">Currency label</note>
@@ -67,36 +67,92 @@
         <source>Feedback form</source>
         <target>Форма зворотного зв'язку</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
           <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="feedbackFormGreetingMessage" datatype="html">
+        <source> Leave you feedback, <x id="ICU" equiv-text="{user.gender, select, male {Mr.} female {Ms.}}"/> <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/> </source>
+        <target> Залиште свій відгук, <x id="ICU" equiv-text="{user.gender, select, male {Mr.} female {Ms.}}"/> <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28eeb817309b258470864e42a3f9f116fadf853b" datatype="html">
+        <source>{VAR_SELECT, select, male {Mr.} female {Ms.}}</source>
+        <target>{VAR_SELECT, select, male {пан} female {пані}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="submitButton" datatype="html">
         <source>Submit</source>
         <target>Відправити</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactUsFormTitle" datatype="html">
         <source>Contact us form</source>
         <target>Форма зв'язку з нами</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.html</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="messageFieldPlaceholder" datatype="html">
+        <source>Message</source>
+        <target>Повідомлення</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.html</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="greetingMessage" datatype="html">
-        <source>Glad to see you again, <x id="PH" equiv-text="firstName"/> <x id="PH_1" equiv-text="lastName"/></source>
-        <target>Раді вас знову бачити, <x id="PH_1" equiv-text="lastName"/> <x id="PH" equiv-text="firstName"/></target>
+        <source>Glad to see you again, <x id="PH" equiv-text="user.firstName"/> <x id="PH_1" equiv-text="user.lastName"/></source>
+        <target>Раді вас знову бачити, <x id="PH_1" equiv-text="user.lastName"/> <x id="PH" equiv-text="user.firstName"/></target>
         <context-group purpose="location">
-          <context context-type="sourcefile">apps/i18n/src/app/app.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="sourcefile">apps/i18n-app/src/app/app.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userCardHeader" datatype="html">
+        <source>User card</source>
+        <target>Картка користувача</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/src/lib/user-card/user-card.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userFirstNameLabel" datatype="html">
+        <source>First name: <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/></source>
+        <target>Ім'я: <x id="INTERPOLATION" equiv-text="{{ user.firstName }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/src/lib/user-card/user-card.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userLastNameLabel" datatype="html">
+        <source>Last name: <x id="INTERPOLATION" equiv-text="{{ user.lastName }}"/></source>
+        <target>Прізвище: <x id="INTERPOLATION" equiv-text="{{ user.lastName }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/src/lib/user-card/user-card.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userEmailLabel" datatype="html">
+        <source>Email: <x id="INTERPOLATION" equiv-text="{{ user.email }}"/></source>
+        <target>Електронна пошта: <x id="INTERPOLATION" equiv-text="{{ user.email }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/src/lib/user-card/user-card.component.html</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
     </body>

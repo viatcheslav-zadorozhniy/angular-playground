@@ -7,9 +7,10 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "start:server": "nx serve api",
-    "build": "nx build --skip-nx-cache",
+    "build": "nx build",
     "test": "nx test",
-    "i18n:extract": "ng extract-i18n i18n --out-file locales/messages.en.xlf"
+    "lint": "nx run-many --target=lint --all",
+    "i18n:extract": "ng extract-i18n i18n-app"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "@nestjs/core": "^8.0.0",
     "@nestjs/ng-universal": "^6.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@nguniversal/express-engine": "^13.0.1",
     "@nrwl/angular": "13.2.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.4.0",

@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-playground/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@angular-playground/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@angular-playground/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

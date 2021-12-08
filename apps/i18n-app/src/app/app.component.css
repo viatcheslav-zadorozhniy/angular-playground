@@ -1,0 +1,13 @@
+:host {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+li,
+h3,
+img {
+  margin-bottom: .5rem;
+}

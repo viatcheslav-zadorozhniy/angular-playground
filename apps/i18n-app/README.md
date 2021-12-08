@@ -1,6 +1,6 @@
-This app is created to test an Angular internationalization functionality and features.
+This app is created to test Angular internationalization functionality and features.
 
-## Links:
+## Angular documentation:
 
 - [Angular Internationalization](https://angular.io/guide/i18n-overview)
 - [Prepare component for translation](https://angular.io/guide/i18n-common-prepare)
@@ -11,5 +11,16 @@ This app is created to test an Angular internationalization functionality and fe
 - [Deploy multiple locales](https://angular.io/guide/i18n-common-deploy)
 - [Set the runtime locale manually](https://angular.io/guide/i18n-optional-manual-runtime-locale)
 
-- [XLIFF](https://en.wikipedia.org/wiki/XLIFF)
+
+## Tools:
+
 - [Free Online XLIFF Editor](https://xliff.brightec.co.uk/)
+- [VS Code XLIFF Sync](https://marketplace.visualstudio.com/items?itemName=rvanbekkum.xliff-sync#synchronize-translation-units)
+
+
+## i18n general info:
+
+- [XLIFF](https://en.wikipedia.org/wiki/XLIFF)
+- [ICU Message Format](https://unicode-org.github.io/icu/userguide/format_parse/messages/)
+- [Plural Rules](https://cldr.unicode.org/index/cldr-spec/plural-rules)
+- [ngx-translate vs built-in i18n](https://github.com/ngx-translate/core/issues/495)

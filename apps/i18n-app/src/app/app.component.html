@@ -1,6 +1,6 @@
 <!-- Add metadata for translation -->
 <!-- https://angular.io/guide/i18n-common-prepare#i18n-metadata-for-translation -->
-<h1 i18n="User welcome|An introduction header for the i18n app@@introductionHeader">Welcome to i18n!</h1>
+<h1 i18n="User welcome|An introduction header for the i18n app@@introductionHeader">Welcome to i18n-app!</h1>
 <p>{{ greetingMessage }}</p>
 
 <!-- Mark element attributes for translations -->
@@ -9,7 +9,7 @@
   src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
   alt="Nx - Smart, Extensible Build Framework"
   i18n-alt="@@logoAlternativeText"
-  width="450"
+  width="100"
 />
 <br>
 
@@ -23,11 +23,11 @@
   <h3 i18n="@@builtInPipesSectionTitle">Built-in pipes</h3>
   <ul>
     <li>
-      <ng-container i18n="Date label@@dateLabel">Date</ng-container>: {{ now | date:'mediumDate':localeId }}
+      <ng-container i18n="Date label@@dateLabel">Date</ng-container>: {{ now | date:'mediumDate' }}
     </li>
 
     <li>
-      <ng-container i18n="Time label@@timeLabel">Time</ng-container>: {{ now | date:'mediumTime':localeId }}
+      <ng-container i18n="Time label@@timeLabel">Time</ng-container>: {{ now | date:'mediumTime' }}
     </li>
 
     <li>
@@ -40,12 +40,34 @@
 <!-- https://angular.io/guide/i18n-optional-manage-marked-text#define-unique-custom-ids -->
 <form>
   <h3 i18n="@@feedbackFormTitle">Feedback form</h3>
+
+  <!-- https://angular.io/guide/i18n-common-prepare#icu-expressions -->
+  <p i18n="@@feedbackFormGreetingMessage" *ngIf="user">
+    Leave you feedback, {user.gender, select, male {Mr.} female {Ms.}} {{ user.firstName }}
+  </p>
+
+  <div>
+    <textarea name="feedback" cols="30" rows="2"></textarea>
+  </div>
+
   <button type="button" i18n="@@submitButton">Submit</button>
 </form>
 
 <form>
   <h3 i18n="@@contactUsFormTitle">Contact us form</h3>
+
+  <div>
+    <textarea
+      rows="2"
+      cols="30"
+      name="feedback"
+      placeholder="Message"
+      i18n-placeholder="@@messageFieldPlaceholder"
+    ></textarea>
+  </div>
+
   <button type="button" i18n="@@submitButton">Submit</button>
 </form>
 
-<!-- <div>Message: {{ hello$ | async | json }}</div> -->
+<!-- Component from the library -->
+<angular-playground-user-card [user]="user"></angular-playground-user-card>
