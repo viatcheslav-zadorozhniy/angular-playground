@@ -2,7 +2,7 @@
 
 How to?
 - [Prepare components](#prepare-components)
-- [Update angular.json](#update-angular.json)
+- [Update angular.json](#update-angularjson)
 - [Extract translatable text](#extract-translatable-text)
 - [Add translations](https://angular.io/guide/i18n-common-translation-files)
 - [Build and Deploy](#build-and-deploy)
