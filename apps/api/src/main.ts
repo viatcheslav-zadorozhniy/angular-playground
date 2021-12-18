@@ -14,12 +14,6 @@ async function bootstrap() {
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
 
-  // TODO: check it
-  app.enableCors({
-    methods: 'GET',
-    maxAge: 3600
-  });
-
   const port = process.env.PORT || 3333;
   await app.listen(port);
   Logger.log(
