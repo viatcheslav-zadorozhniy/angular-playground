@@ -1,0 +1,36 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+angular-playground-header,
+angular-playground-footer {
+  align-items: center;
+  display: flex;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+angular-playground-header {
+  background-color: lightgreen;
+  height: 50px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+angular-playground-aside {
+  padding: 1rem;
+}
+
+angular-playground-main {
+  background-color: gold;
+  flex-grow: 1;
+}
+
+angular-playground-footer {
+  background-color: lightblue;
+  height: 30px;
+}

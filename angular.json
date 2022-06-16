@@ -68,11 +68,116 @@
       },
       "tags": []
     },
+    "change-detection": {
+      "projectType": "application",
+      "root": "apps/change-detection",
+      "sourceRoot": "apps/change-detection/src",
+      "prefix": "angular-playground",
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "css"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/change-detection",
+            "index": "apps/change-detection/src/index.html",
+            "main": "apps/change-detection/src/main.ts",
+            "polyfills": "apps/change-detection/src/polyfills.ts",
+            "tsConfig": "apps/change-detection/tsconfig.app.json",
+            "assets": [
+              "apps/change-detection/src/favicon.ico",
+              "apps/change-detection/src/assets"
+            ],
+            "styles": ["apps/change-detection/src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/change-detection/src/environments/environment.ts",
+                  "with": "apps/change-detection/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "change-detection:build:production"
+            },
+            "development": {
+              "browserTarget": "change-detection:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "change-detection:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/change-detection/src/**/*.ts",
+              "apps/change-detection/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/change-detection"],
+          "options": {
+            "jestConfig": "apps/change-detection/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "i18n-app": {
       "projectType": "application",
       "root": "apps/i18n-app",
       "sourceRoot": "apps/i18n-app/src",
       "prefix": "angular-playground",
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "css"
+        }
+      },
       "i18n": {
         "sourceLocale": "en",
         "locales": {
@@ -95,7 +200,10 @@
             "main": "apps/i18n-app/src/main.ts",
             "polyfills": "apps/i18n-app/src/polyfills.ts",
             "tsConfig": "apps/i18n-app/tsconfig.app.json",
-            "assets": ["apps/i18n-app/src/favicon.ico", "apps/i18n-app/src/assets"],
+            "assets": [
+              "apps/i18n-app/src/favicon.ico",
+              "apps/i18n-app/src/assets"
+            ],
             "styles": ["apps/i18n-app/src/styles.css"],
             "scripts": []
           },
@@ -180,6 +288,12 @@
       "root": "libs/ui",
       "sourceRoot": "libs/ui/src",
       "prefix": "angular-playground",
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "css"
+        }
+      },
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
