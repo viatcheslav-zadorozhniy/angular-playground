@@ -288,6 +288,12 @@
       "root": "apps/standalone-components",
       "sourceRoot": "apps/standalone-components/src",
       "prefix": "angular-playground",
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "css"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
